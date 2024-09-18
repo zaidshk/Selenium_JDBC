@@ -1,0 +1,20 @@
+<xmlDiffOptions>
+  <ignoreNamespaces>false</ignoreNamespaces>
+  <ignoreNamespacePrefixes>true</ignoreNamespacePrefixes>
+  <caseSensitive>true</caseSensitive>
+  <trimWhitespace>true</trimWhitespace>
+  <normalizeWhitespace>false</normalizeWhitespace>
+  <collapseWhitespace>false</collapseWhitespace>
+  <ignoreWhitespace>true</ignoreWhitespace>
+  <ignoreAttributes>true</ignoreAttributes>
+  <ignoreElementText>false</ignoreElementText>
+  <ignoreAttributeValues>false</ignoreAttributeValues>
+  <ignoreElementOrdering>false</ignoreElementOrdering>
+  <ignoreAttributeOrdering>true</ignoreAttributeOrdering>
+  <ignoredXPaths>
+    <string>/*[local-name()=&apos;transmission&apos;]/@*[local-name()=&apos;sendingPartyID&apos;]</string>
+    <string>/*[local-name()=&apos;transmission&apos;]/*[local-name()=&apos;message&apos;]/@*[local-name()=&apos;sendingPartyID&apos;]</string>
+    <string>/*[local-name()=&apos;transmission&apos;]/*[local-name()=&apos;message&apos;]/*[local-name()=&apos;InventoryAdjustmentNotification&apos;]/*[local-name()=&apos;adjustmentDetail&apos;]/*[local-name()=&apos;adjustmentControlID&apos;]/text()</string>
+    <string>/*[local-name()=&apos;transmission&apos;]/*[local-name()=&apos;message&apos;]/*[local-name()=&apos;InventoryAdjustmentNotification&apos;]/*[local-name()=&apos;adjustmentDetail&apos;]/*[local-name()=&apos;inventoryEffectiveDateTime&apos;]/text()</string>
+  </ignoredXPaths>
+</xmlDiffOptions>

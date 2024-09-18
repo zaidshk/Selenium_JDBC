@@ -1,0 +1,105 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+        <groupId>xpo.qa.ltl</groupId>
+        <artifactId>ltl-qa-parent</artifactId>
+        <version>1.0.1-SNAPSHOT</version>
+    </parent>
+
+	<artifactId>sc-qa-wmx</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>sc-qa-wmx</name>
+	<url>https://github.xpo.com/OneXPO/sc-qa-wmx</url>
+
+<repositories>
+
+        <repository>
+            <!-- Needed for QA's common test utilities. -->
+            <id>javasnapshots</id>
+            <name>javasnapshots</name>
+            <url>http://mavenrepo.con-way.com:8080/nexus/content/repositories/javasnapshots/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>javasnapshots</id>
+            <url>http://mavenrepo.con-way.com:8080/nexus/content/repositories/javasnapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <!-- Common QA utilities, helpers and services. -->
+            <groupId>xpo.qa.ltl</groupId>
+            <artifactId>ltl-qa-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <!-- Common QA Selenium framework. -->
+            <groupId>xpo.qa.ltl</groupId>
+            <artifactId>ltl-qa-common-selenium</artifactId>
+        </dependency>
+
+        <dependency>
+            <!-- Common QA Selenium framework. -->
+            <groupId>xpo.qa.ltl</groupId>
+            <artifactId>ltl-qa-common-databases</artifactId>
+        </dependency>
+        
+         <dependency>
+            <!-- OMX Project -->
+            <groupId>xpo.qa.ltl</groupId>
+            <artifactId>sc-qa-omx</artifactId>
+            <version>1.0.1-SNAPSHOT</version>
+        </dependency>
+
+		<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.9.8</version>
+		</dependency>
+		
+		
+		
+		<dependency>
+    	<groupId>com.rallydev.rest</groupId>
+    	<artifactId>rally-rest-api</artifactId>
+    	<version>2.2.1</version>
+		</dependency>
+  		
+   <dependency>
+   <groupId>org.apache.httpcomponents</groupId>
+   <artifactId>httpclient</artifactId>
+   <version>4.5.2</version>
+   <scope>runtime</scope>
+ </dependency>
+		
+		
+		
+		
+		
+	
+		<dependency>
+		  <groupId>com.googlecode.java-diff-utils</groupId> 
+		  <artifactId>diffutils</artifactId> 
+		  <version>1.2.1</version> 
+  		</dependency>
+        
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+</project>

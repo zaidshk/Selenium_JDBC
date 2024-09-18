@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Wmx_Regression_Suite" verbose="1">
+
+ <test name="wmx_OrderManagement" preserve-order="true" enabled="false">
+     <classes>
+      <class name="xpo.qa.sc.wmx.tests.WMXEndToEndTest">
+         </class>
+    </classes>
+  </test>
+  
+  
+   <test name="wmx_OrderManagement" preserve-order="true" enabled="false">
+     <classes>
+      <class name="xpo.qa.sc.wmx.tests.WMXProdToQADataTransfer">
+      <methods>
+       	<!-- <include name="omxDBDownloadProdToQa"/>
+       	<include name="cmxDBDownloadProdToQa"/> -->
+     	<include name="omxToCmxDBTransfer"/>
+          
+        </methods>
+       </class>
+    </classes>
+  </test>
+  
+  <test name="wmx_OrderManagement" preserve-order="true" enabled="true">
+     <classes>
+      <class name="xpo.qa.sc.wmx.tests.WMXEndToEndValidation">
+      <methods>
+       <!-- <include name="cmxInsertOrderDB"/>  -->
+       <!-- 	<include name="cmxInsertDB"/> -->
+     	<include name="omxVefiryDB"/>
+     	
+          
+        </methods>
+       </class>
+    </classes>
+  </test>
+</suite>
